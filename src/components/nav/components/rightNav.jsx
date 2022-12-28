@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { colors, fontSize } from "../../../styles/variables";
 
 const Ul = styled.ul`
   list-style: none;
@@ -16,7 +17,8 @@ const Ul = styled.ul`
 
   @media (max-width: 640px) {
     flex-flow: column nowrap;
-    background-color: #323232d4;
+    background-color: ${colors.lightGrey};
+    opacity: 0.8;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     right: 0;
@@ -28,7 +30,7 @@ const Ul = styled.ul`
     li {
       color: #FFFFFF;
       font-weight: 800;
-      font-size: 36px;
+      font-size: ${fontSize.extraLarge};
       display: flex;
       justify-content: center;
       border-top: 5px solid rgba(255, 255, 255, 0.25);
@@ -44,7 +46,7 @@ const Ul = styled.ul`
 
     @media (max-width: 380px) {
       li {
-        color: #fff;
+        color: ${colors.white};
         padding: 10px 0;
         display: flex;
         justify-content: center;
@@ -52,6 +54,7 @@ const Ul = styled.ul`
         padding: 20px;
         margin-left: 50px;
         margin-right: 50px;
+        font-size: ${fontSize.extraLarge};
     }
   }
   

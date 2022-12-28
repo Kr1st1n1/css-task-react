@@ -13,6 +13,7 @@ export const fontSize = {
   large: "20px",
   medium: "18px",
   small: "12px",
+  xs: "8px",
 };
 
 export const borderRadius = {
@@ -26,13 +27,10 @@ export const Flex = styled.div`
   flex-direction: ${(props) => props.direction || "column"};
   height: ${({ height }) => height};
   gap: ${(props) => props.gap || "20px"};
-`;
 
-export const FlexRow = styled.div`
-  display: flex;
-  align-items: ${(props) => props.align || "center"};
-  justify-content: ${(props) => props.justify || "space-between"};
-  flex-direction: ${(props) => props.direction || "row"};
-  height: ${({ height }) => height};
-  gap: ${(props) => props.gap || "20px"};
+  @media (min-width: 1200px) {
+    flex-direction: ${(props) => props.direction || "row"};
+    justify-content: ${(props) => props.justify || "space-around"};
+  }
+
 `;

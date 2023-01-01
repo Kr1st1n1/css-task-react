@@ -12,13 +12,15 @@ export const fontSize = {
   xl: "36px",
   l: "20px",
   m: "18px",
-  s: "12px",
-  xs: "10px",
+  ms: "16px",
+  s: "15px",
+  xs: "12px",
 };
 
 export const borderRadius = {
   primary: "10px",
-};
+  secondary: "15px",
+}
 
 export const Flex = styled.div`
   display: flex;

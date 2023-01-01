@@ -1,7 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
   * {
     box-sizing: border-box;
@@ -11,6 +10,11 @@ const GlobalStyles = createGlobalStyle`
 
   .body {
     max-width: 1400px;
+  }
+
+  .bg-color {
+    background-color: #DADADA;
+    min-height: 100vh;
   }
 `
 

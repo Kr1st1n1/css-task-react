@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledListItem = styled.div`
+
+  .item_content {
+    padding-top: 5px;
+  }
  
   .wrapper {
     width: 40px;
@@ -10,7 +14,7 @@ export const StyledListItem = styled.div`
     display: flex;
     align-self: flex-start;
     position: absolute;
-    left: 34px;
+    left: 23px;
     top: 4px;
   }
 
@@ -25,10 +29,21 @@ export const StyledListItem = styled.div`
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     display: flex;
     padding-bottom: 15px;
-    padding-right: 70px;
-    padding-left: 89px;
+    padding-right: 2px;
+    padding-left: 70px;
     padding-top: 8px;
     position: relative;
   }
 
+  @media (min-width: 900px) {
+    .list_item {
+      padding-bottom: 22px;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .list_item {
+      padding-bottom: 10px;
+    }
+  }
 `;

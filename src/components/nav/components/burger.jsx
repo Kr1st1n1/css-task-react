@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import RightNav from './rightNav';
 
 const StyledBurger = styled.div`
-  width: 2rem;
+  width: 3srem;
   height: 2rem;
   position: fixed;
   top: 15px;
@@ -18,11 +18,11 @@ const StyledBurger = styled.div`
   }
 
   div {
-    width: 2.2rem;
+    width: 3rem;
     height: 5px;
     background-color: ${({ open }) => open ? '#C4C4C4' : '#C4C4C4'};
     border-radius: 10px;
-    transform-origin: 1px;
+    transform-origin: 6px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
@@ -38,6 +38,7 @@ const StyledBurger = styled.div`
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
+
 `;
 
 const Burger = () => {

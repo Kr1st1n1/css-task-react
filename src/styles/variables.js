@@ -9,11 +9,11 @@ export const colors = {
 };
 
 export const fontSize = {
-  extraLarge: "36px",
-  large: "20px",
-  medium: "18px",
-  small: "12px",
-  xs: "8px",
+  xl: "36px",
+  l: "20px",
+  m: "18px",
+  s: "12px",
+  xs: "10px",
 };
 
 export const borderRadius = {
@@ -23,7 +23,7 @@ export const borderRadius = {
 export const Flex = styled.div`
   display: flex;
   align-items: ${(props) => props.align || "center"};
-  justify-content: ${(props) => props.justify || "space-between"};
+  justify-content: ${(props) => props.justify || "space-aroun"};
   flex-direction: ${(props) => props.direction || "column"};
   height: ${({ height }) => height};
   gap: ${(props) => props.gap || "20px"};

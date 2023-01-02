@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from "../generalStyles/variables";
+import { colors } from '../generalStyles/variables';
 
 export const StyledNav = styled.nav`
   width: 100%;
@@ -9,4 +9,4 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   position: fixed;
   z-index: 10;
-`
+`;

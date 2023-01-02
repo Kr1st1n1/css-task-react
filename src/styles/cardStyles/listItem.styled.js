@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { breakPoints } from '../generalStyles/variables';
 
-export const StyledListItem = styled.div`
+export const StyledListItem = styled.div` 
+    gap: 60px;
 
   .item_content {
     padding-top: 5px;
@@ -14,8 +16,8 @@ export const StyledListItem = styled.div`
     display: flex;
     align-self: flex-start;
     position: absolute;
-    left: 23px;
-    top: 4px;
+    left: 27px;
+    top: 6px;
   }
 
   .card_bottom-text {
@@ -28,22 +30,38 @@ export const StyledListItem = styled.div`
   .list_item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-right: 2px;
-    padding-left: 70px;
-    padding-top: 8px;
+    padding-left: 77px;
+    font-weight: 800;
+    padding-top: 6px;
     position: relative;
   }
 
-  @media (min-width: 900px) {
-    .list_item {
-      padding-bottom: 22px;
+  @media (min-width: ${breakPoints.m}) {
+      .list_item {
+        padding-top: 6px;
+        padding-left: 68px;
+        padding-bottom: 23px;
+      }
+
+      .wrapper {
+      left: 15px;
+      top: 7px;
     }
   }
 
-  @media (min-width: 1201px) {
+  @media (min-width: ${breakPoints.l}) {
     .list_item {
       padding-bottom: 10px;
+      padding-right: 2px;
+      padding-left: 77px;
+      padding-top: 6px;
+    }
+
+    .wrapper {
+      left: 27px;
+      top: 6px;
     }
   }
 `;

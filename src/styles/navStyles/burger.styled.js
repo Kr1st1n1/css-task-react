@@ -1,25 +1,19 @@
 import styled from 'styled-components';
+import { breakPoints } from '../generalStyles/variables';
 
 export const StyledBurger = styled.div`
   width: 3rem;
   height: 2rem;
   position: fixed;
   top: 15px;
-  right: 20px;
+  right: 12px;
   display: none;
-
-  @media (max-width: 640px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  }
 
   div {
     width: 3rem;
     height: 5px;
     background-color: ${({ open }) => open ? '#C4C4C4' : '#C4C4C4'};
-    border-radius: 10px;
-    transform-origin: 6px;
+    transform-origin: 9px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
@@ -35,4 +29,10 @@ export const StyledBurger = styled.div`
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   };
-`
+
+  @media (max-width: ${breakPoints.s}) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+`;

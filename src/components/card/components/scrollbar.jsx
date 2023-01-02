@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ScrollbarWrapper } from "../../../styles/cardStyles/scrollbar.styled";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ScrollbarWrapper } from '../../../styles/cardStyles/scrollbar.styled';
 
 export const Scrollbar = props => {
     const {children} = props

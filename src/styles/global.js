@@ -6,16 +6,13 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
   }
 
-  .body {
-    max-width: 1400px;
-  }
-
-  .bg-color {
+  html, body {
+    font-family: 'Roboto';
     background-color: #DADADA;
-    min-height: 100vh;
   }
-`
+`;
 
 export default GlobalStyles;
